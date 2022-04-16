@@ -1,38 +1,42 @@
 "use strict";
 
-let day = 16, month = 4;
-console.log("Peter's Log 0416")
-console.log("The month is " + month + "  The day is " + day +".");
-
-console.log("The sum is: " + (day + month));
-
-if( month > day){
-    console.log("Month is bigger than day");
-} else {
-    console.log("Day is greater");
-}
-
-let choice = true;
-console.log("This is a ternary:");
-choice ? console.log("Today is a great!") : console.log("Today is so so...");
-let num = 2;
-switch(num){
-    case 1:
-        console.log("Switch 1")
-        break;
-    case 2:
-        console.log("Switch 2");
-        break;
-    default:
-        console.log("Switch - It's not 1 or 2!!!");
-        break;
-}
 function myMood(){
     let feeling = prompt("How are you feeling today?");
     document.getElementById("mood").innerHTML= feeling;
 }
 
-const myName = "Peter";
-console.log("Const name is: "+ myName);
+function doSomething(){
+    let doit = prompt("What do you want to do?");
+    switch(doit){
+        case "add":
+            let x = prompt("What's the first number?");
+            let y = prompt("What's the second number?");
+            let sum = parseFloat(x)+parseFloat(y);
+            alert("The sum is: "+ sum);
+            break;
+        case "celsius":
+            let celsius = prompt("What's the fahrenheit?");
+            celsius = (5/9) * (celsius-32);
+            alert("The fahrenheit to celsius is: "+ celsius.toFixed(2));
+            document.getElementById("temperature").innerHTML = celsius.toFixed(2);
+            break;
+        default:
+            alert("You chose an impossible thing!");
+            break;
+    }
+}
 
-console.log(typeof myName);
+//Making a car object
+const car = {make:"Kia", model:"Rio", color:"black", year:2022, describe: function(){return this.color + " " + this.make + " " + this.model + " " + this.year;}};
+
+function makeCar(){
+    car.make = prompt("What's the car's make?");
+    car.model = prompt("What's the car's model?");
+    car.color = prompt("What's the car's color?");
+    car.year = prompt("What's the car's year?");
+    document.getElementById("make").innerHTML = car.make;
+    document.getElementById("model").innerHTML = car.model;
+    document.getElementById("year").innerHTML = car.year;
+    document.getElementById("color").innerHTML = car.color;
+    document.getElementById("description").innerHTML = car.describe();
+}
