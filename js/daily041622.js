@@ -1,5 +1,5 @@
 "use strict";
-(function(){
+
     let day = 16, month = 4;
 console.log("Peter's Log 0416")
     console.log("The month is " + month + "  The day is " + day +".");
@@ -27,5 +27,12 @@ console.log("Peter's Log 0416")
             console.log("Switch - It's not 1 or 2!!!");
             break;
     }
+    function myMood(){
+        let feeling = prompt("How are you feeling today?");
+        document.getElementById("mood").innerHTML= feeling;
+    }
 
-})()
+const myName = "Peter";
+    console.log("Const name is: "+ myName);
+
+console.log(typeof myName);
