@@ -9,5 +9,9 @@
     //integers are accurate up to 15 digits
     //float point arithmetic might not be accurate, solve by multiply and divide
     console.log("Floating point arithmetic might not be acdurate");
+    let nums = 234.23
+    console.log("Return the number as a string: ", nums.toString());
+    console.log("Fixed decimal points: ", nums.toFixed(1));
+
 
 })()
