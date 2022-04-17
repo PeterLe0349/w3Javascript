@@ -12,6 +12,7 @@
     let nums = 234.23
     console.log("Return the number as a string: ", nums.toString());
     console.log("Fixed decimal points: ", nums.toFixed(1));
+    console.log("Number also has properties such as Number.Max value, min value, infinity, nan");
 
 
 })()
