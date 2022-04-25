@@ -16,10 +16,21 @@
             case 'add':
                 task = add(100,4);
                 break;
+            case 'repeat':
+                repeat();
+                break;
             default:
                 task = 'Nothing decided'; break;
         }
         document.getElementById("taskData").innerHTML = task;
+    }
+
+    function repeat(str){
+        let txt= '';
+        str = prompt("What do you want?")
+        for(let i=0; i<10;i++){
+            txt += str;
+        }
     }
 
     function add(x,y){
