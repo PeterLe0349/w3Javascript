@@ -1,0 +1,17 @@
+body {
+    color: rebeccapurple;
+}
+
+header {
+    border: 1px solid coral;
+}
+
+nav {
+    border: 2px solid firebrick;
+}
+
+footer {
+    border: 1px solid forestgreen;
+    margin: 3px;
+}
+
