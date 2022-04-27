@@ -4,10 +4,16 @@ body {
 
 header {
     border: 1px solid coral;
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
 }
 
 nav {
     border: 2px solid firebrick;
+    text-align: right;
+    background-color: darkslategray;
+    color: whitesmoke;
 }
 
 footer {

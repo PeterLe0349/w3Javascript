@@ -5,7 +5,7 @@
 
     function greeting(){
         let myName = prompt("What's your name?");
-        document.getElementById('greeting').innerHTML = `Hello, ${myName}!`;
+        document.getElementById('greeting').innerHTML = `Hello, ${myName}! <br><h6> Today's Date is: ${new Date().toString()}</h6>`;
     }
 
 
