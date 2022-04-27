@@ -1,5 +1,9 @@
 body {
-    color: rebeccapurple;
+    color: black;
+    /*background-image: url("/img/glassLemonDrink.webp");*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-size: 100% 100%;*/
 }
 
 header {
@@ -23,5 +27,28 @@ footer {
 
 li {
     display: inline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: left;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+th {
+    text-align: center;
+    border: 1px solid black;
+    padding: 3px;
+    color: darkslategray;
+    background-color: antiquewhite;
+}
+
+tr:hover {
+    background-color: ghostwhite;
 }
 
