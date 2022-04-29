@@ -1,0 +1,89 @@
+body {
+    background-color: rebeccapurple;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: darkred;
+    margin: 0;
+}
+
+header {
+    color: wheat;
+    text-align: center;
+    background-color: purple;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    background-color: #280f42;
+}
+
+ol{
+    margin: 0;
+}
+
+nav>ol>li {
+    color: white;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 5%;
+}
+
+li:hover {
+    color: greenyellow;
+}
+
+.box {
+    border: 0px solid white;
+    width: 33.33%;
+    min-height: 40px;
+    float: left;
+
+}
+
+.box1 {
+    background-color: red;
+}
+.box2 {
+    background-color: green;
+}
+.box3 {
+    background-color: mediumpurple;
+}
+
+.table-of-contents {
+    background-color: floralwhite;
+    color:black;
+    min-height: 800px;
+    width: 20%;
+}
+
+.main-stuff {
+    width: 50%;
+    background-color: darkcyan;
+    min-height: 800px;
+}
+
+.side-bar {
+    width: 30%;
+    background-color: darkslategray;
+    min-height: 800px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+a {
+    color:white;
+}
