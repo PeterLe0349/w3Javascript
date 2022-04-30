@@ -62,3 +62,7 @@ aside{
 footer {
     clear: both;
 }
+
+iframe  {
+    width: 99%;
+}
