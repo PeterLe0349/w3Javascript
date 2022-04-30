@@ -8,10 +8,57 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
         Daily Practice Banner
     </header>
+    <nav>
+        <ol>
+            <li>Home</li>
+            <li>Me</li>
+            <li>Contact</li>
+        </ol>
+    </nav>
+    <div>
+        <div class="box left">
+            <ol>
+                Table of Contents
+                <li>Chapter 1</li>
+                <li>Chapter 2</li>
+                <li>Chapter 3</li>
+            </ol>
+            <form action="https://request-inspector.glitch.me/">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password"><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="box mid">
+            <img src="img/bike.jpg" alt="bike">
 
+            <form action="https://request-inspector.glitch.me/">
+                <h1>  What do you like riding?</h1>
+            <input type="checkbox" id="bike" name="ride" value="bike">
+            <label for="bike">Bike</label><br>
+                <input type="checkbox" id="car" name="ride" value="car">
+                <label for="car">Car</label><br>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="box right">
+           <h3>Page location</h3>
+            <select name="location" id="locate">
+                <option value="top">Top</option>
+                <option value="mid">Mid</option>
+                <option value="bottom">Bottom</option>
+                <option value="index">Index</option>
+            </select>
+        </div>
+    </div><br>
+
+<aside>Side stuff</aside><br>
+    <footer id="bottom">@COPYRIGHT at Fierem <a href="http://www.fierem.com">Bottom Links</a></footer>
 <script src="js/zzzDailyJS043022.js"></script>
 </body>
 

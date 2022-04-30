@@ -1,8 +1,64 @@
 header{
-    color: darkgreen;
+    color: #d3eed3;
     text-align: center;
     font-size: xxx-large;
     font-weight: bold;
+    background-color: #011515;
+}
+
+nav{
+    text-align: right;
+}
+nav>ol>li {
+    font-size: 20px;
+    display: inline-block;
+    padding-right:30px;
+    border-left: 3px solid lightgreen;
+    width:15%;
+    margin:0;
+    border-bottom: 1px solid lightseagreen;
+}
+
+div {
+    width: 100%;
+}
+
+nav>ol {
+    margin: 0;
+}
+
+.box {
+
+    float: left;
+}
+.left {
+    width: 20%;
+
 
 }
 
+.mid {
+    width: 55%;
+    height: 900px;
+
+}
+
+.right {
+    width: 25%;
+
+}
+
+ol{
+    list-style: lower-roman;
+}
+
+img {
+    width: 99%;
+}
+
+aside{
+    clear: both;
+}
+footer {
+    clear: both;
+}
