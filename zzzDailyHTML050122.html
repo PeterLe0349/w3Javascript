@@ -18,12 +18,13 @@
 </nav>
 <div>
     <div class="box left">
+        <br><br><br>
         <h3>Login</h3>
         <form action="https://request-inspector.glitch.me/" id="formBelief">
             <label for="username">Believer</label>
-            <input type="text" id="username" name="username"><br>
+            <input type="text" id="username" name="username" placeholder="nombre"><br>
             <label for="password">Password</label>
-            <input type="password" id="password" name="password"><br>
+            <input type="password" id="password" name="password" placeholder="pass"><br>
             <input type="submit" value="Pray">
 
         </form>
@@ -54,7 +55,7 @@
         </p>
     </div>
     <div class="box right">
-        <label for="apostle">Favorite Apostle</label>
+        <label for="apostle">Favorite Apostle: </label>
         <select name="apostle" id="apostle" form="formBelief">
             <option value="Peter">Peter</option>
             <option value="Andrew">Andrew</option>
@@ -71,9 +72,16 @@
         </select>
         <br>
         <section id="response">
-            Who?
+            <h4>Inquire-</h4>
             <p id="apostleText">...</p>
-            <button id="apostleButton">Apostle</button>
+            <button id="apostleButton">PONDER</button>
+        </section>
+        <section>
+            <h4>Tasks to accomplish:</h4>
+            <h5>Task#</h5><button id="btnTask">task</button>
+            <h6 id="textTask">Task Response</h6>
+            <h5>Task results:</h5>
+            <h6 id="taskResults">....</h6>
         </section>
     </div>
 </div>
