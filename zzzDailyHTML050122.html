@@ -19,11 +19,11 @@
 <div>
     <div class="box left">
         <h3>Login</h3>
-        <form action="https://request-inspector.glitch.me/">
+        <form action="https://request-inspector.glitch.me/" id="formBelief">
             <label for="username">Believer</label>
-            <input type="text" id="username" name="username">
+            <input type="text" id="username" name="username"><br>
             <label for="password">Password</label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password"><br>
             <input type="submit" value="Pray">
 
         </form>
@@ -55,7 +55,7 @@
     </div>
     <div class="box right">
         <label for="apostle">Favorite Apostle</label>
-        <select name="apostle" id="apostle">
+        <select name="apostle" id="apostle" form="formBelief">
             <option value="Peter">Peter</option>
             <option value="Andrew">Andrew</option>
             <option value="James">James</option>
@@ -69,10 +69,16 @@
             <option value="Simon">Simon</option>
             <option value="Judas">Judas</option>
         </select>
+        <br>
+        <section id="response">
+            Who?
+            <p id="apostleText">...</p>
+            <button id="apostleButton">Apostle</button>
+        </section>
     </div>
 </div>
 <aside>Act of Contrition</aside>
-<footer>@Fierem links</footer>
+<footer>@Fierem <a href="http://www.fierem.com">links</a></footer>
 
 <script src="js/zzzDailyJS050122.js"></script>
 </body>

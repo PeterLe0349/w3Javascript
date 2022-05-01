@@ -6,6 +6,10 @@
 }
 header {
     color: darkred;
+    font-size: 40px;
+    font-weight: bolder;
+    background-image: url("../img/bible.jpeg");
+    background-size: cover;
     text-align: center;
 }
 nav{
@@ -50,4 +54,12 @@ aside {
 footer {
     clear: both;
     text-align: center;
+    border: 3px solid darkred;
+    border-left: none;
+    border-right: none;
+}
+
+header>img {
+    width: 30%;
+    opacity: .9;
 }
