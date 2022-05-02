@@ -1,3 +1,7 @@
+:root {
+    --mini-box-width: 35%;
+}
+
 body {
     background-color: lightpink;
 }
@@ -8,27 +12,34 @@ body {
 }
 
 .main {
-    height: 1200px;
 }
 
 .box1 {
     background-color: red;
-    width: 300px;
-    height: 300px;
-    position: fixed;
+    width: var(--mini-box-width);
+    height: 30%;
+    float: right;
+
 
 }
 
 .box2 {
     background-color: purple;
-    width: 300px;
-    height: 300px;
+    width: var(--mini-box-width);
+    height: 30%;
     float: right;
 }
 
 .box3 {
     background-color: green;
-    width: 300px;
-    height: 300px;
+    width: var(--mini-box-width);
+    height: 30%;
     float: right;
+}
+
+.container {
+    width: 900px;
+    height: 900px;
+    border: 3px solid black;
+    margin: auto;
 }
