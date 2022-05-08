@@ -182,6 +182,7 @@ function() {
         return {value:obj.value, negPos:obj.negPos};
     }
 
+    console.log("pow" + superNumber['integer']);
 
     //END OF IIFE
 })              ();
