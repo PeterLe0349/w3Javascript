@@ -10,3 +10,22 @@
 h1{
     text-align: center;
 }
+
+.bgcolor {
+    background-color: var(--bg-color);
+
+}
+
+.barheight {
+    height: 5em;
+}
+
+.responsive {
+    width: 10%;
+    height: auto;
+}
+
+.img-logo {
+    width: 4em;
+    height: 4em;
+}
