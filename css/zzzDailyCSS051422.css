@@ -1,7 +1,16 @@
 :root {
     --purple: purple;
+    counter-reset: headCount;
 }
 
 h1 {
     color: var(--purple);
+    text-align: center;
+}
+
+h1::before {
+    /*counter-increment: headCount;*/
+    /*content: "Hello #" counter(headCount);*/
+
+
 }
