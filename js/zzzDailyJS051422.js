@@ -4,12 +4,15 @@
 
     let timerCount = 10;
     let bomber = {};
+    let notice = document.getElementById('tickTock');
 
     function startFuse(){
+        document.getElementById('fuse').style.visibility = "hidden";
+        timerCount = 10;
         bomber = setInterval(function() {
-            console.log(`You have ${timerCount} seconds to defuse the bomb!`);
+            notice.innerText = `You have ${timerCount} seconds to defuse the bomb!`;
             timerCount--;
-            if (timerCount === 0) {
+            if (timerCount < 0) {
                 alert("Baboom!");
                 clearInterval(bomber);
             }
@@ -22,7 +25,7 @@
 
 
     function defuse(){
-        console.log("Red wire cut!  BOMB defused! ");
+        notice.innerText = "Red wire cut!  BOMB defused! ";
         clearInterval(bomber);
     }
 
