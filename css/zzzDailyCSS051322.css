@@ -1,0 +1,9 @@
+:root {
+    --purple: purple;
+    font-size: 1em;
+}
+
+body{
+    color: var(--purple);
+
+}
