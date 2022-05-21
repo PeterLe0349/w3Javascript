@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JQuery CDN 3.6 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--   personal custom CSS-->
+    <link rel="stylesheet" href="css/jQuery_review.css">
+    <title>Hello, Fierem!</title>
+</head>
+<body>
+<!--main container-->
+<div class="container">
+    <!--    navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Enlightenment</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ulList">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Ponder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pursue</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Perfect
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">1</a></li>
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Ponder" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Hmm...</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--    main row-->
+    <div class="row">
+        <!--        left column-->
+        <div class="col-3">
+            <div id="loginInput" class="text-danger bg-light">
+                <label for="username" class="form-label">Disciple</label>
+                <input type="text" class="form-control" name="username" id="username">
+                <label for="password" class="form-label">Attainment</label>
+                <input type="password" id="password" name="password" class="form-control">
+
+            </div>
+
+        </div>
+        <!--        mid column-->
+        <div class="col-6" id="midColumn">
+            <p id="p1"><h1>P1 Title</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus modi nihil obcaecati suscipit. Accusantium autem cupiditate dignissimos eligendi, error eum harum iure iusto magni ratione sequi ullam veritatis voluptatum.
+            </p>
+            <p id="p2">
+            <h1>P2 Title</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet asperiores delectus deleniti distinctio dolorem est eum explicabo harum hic, ipsa magnam maiores minus perspiciatis quam soluta tempore velit voluptatem.
+            </p>
+            <p id="p3">
+            <h1>P3 Title</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus est maxime officiis voluptate! Accusantium alias, delectus ducimus eos exercitationem facere, iure laborum magnam nihil nulla quaerat quis quod sapiente similique.
+            </p>
+            <div class="d-grid col-6 mx-auto">
+                <button class="btn btn-dark" id='fieremBtn' type="button">Fierem</button>
+            </div>
+        </div>
+        <!--        right column-->
+        <div class="col-3" id="rightColumn">
+            <div class="container">
+                <h3>Options</h3>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+
+        </div>
+        <!--        end main row-->
+    </div>
+    <!--    end main container-->
+</div>
+
+
+
+
+
+
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<!--Personal custom JS script-->
+<!--<script src="data/inventory.json"></script>-->
+<script src="js/JSON_review.js.js"></script>
+</body>
+</html>
+
