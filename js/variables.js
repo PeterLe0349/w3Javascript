@@ -82,3 +82,11 @@ let stringArray = ['Peter', 'John', 'Linda', 'David', 'Guip'];
 
 let alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
+function makeRandomNumArray(amount, highestNumber){
+    const arr = [];
+    for(let i = 0; i < amount; i++){
+        arr.push(Math.floor(Math.random() * highestNumber));
+    }
+    return arr;
+}
+
