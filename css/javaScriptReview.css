@@ -1,0 +1,15 @@
+:root{
+    --purple: rebeccapurple;
+    --black: rgb(59, 1, 1);
+    counter-reset: countTracker;
+}
+
+body{
+    color: var(--black);
+
+}
+
+h1::before {
+    /*counter-increment: countTracker;*/
+    /*content: "#" counter(countTracker) " ";*/
+}
