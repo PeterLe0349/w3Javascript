@@ -78,7 +78,7 @@ let toolObjects = [
 
 let numArray = [1, 324, 4, 23423, 234, 2343];
 
-let stringArray = ['Peter', 'John', 'Linda', 'David', 'Guip'];
+let stringArray = ['Peter', 'Pierre', 'Pedro', 'Piotr'];
 
 let alphabet = 'abcdefghijklmnopqrstuvwxyz';
 

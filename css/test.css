@@ -4,5 +4,6 @@
 }
 
 body{
-    color: var(--purple);
+    color: black;
+    font-weight: bold;
 }

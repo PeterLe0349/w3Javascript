@@ -1,0 +1,68 @@
+* {
+    margin:0;
+    padding: 0;
+    border: 0;
+
+}
+header {
+    color: darkred;
+    font-size: 40px;
+    font-weight: bolder;
+    background-image: url("../img/bible.jpeg");
+    background-size: cover;
+    text-align: center;
+}
+nav{
+    width: 100%;
+    clear: both;
+    overflow: auto;
+    background-color: darkred;
+}
+
+nav>ul>li {
+    float: left;
+    padding-right: 40px;
+    list-style-type: none;
+    background-color: #d9c6c6;
+
+
+}
+li:hover {
+    color: lightcoral;
+}
+
+.box {
+    float: left;
+    border-left: 1px solid darkred;
+    min-height: 400px;
+}
+
+.left {
+    width: 30%;
+}
+
+.mid {
+    width: 45%;
+}
+
+.right {
+    width: 20%;
+}
+
+aside {
+    clear: both;
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    border: 3px solid darkred;
+    border-left: none;
+    border-right: none;
+}
+
+header>img {
+    width: 30%;
+    opacity: .9;
+}
