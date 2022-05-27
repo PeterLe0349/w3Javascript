@@ -80,7 +80,11 @@ let numArray = [1, 324, 4, 23423, 234, 2343];
 
 let stringArray = ['Peter', 'Pierre', 'Pedro', 'Piotr'];
 
+let apostleArray = ["Peter", "Andrew", "James","John","Philip", "Bartholomew", "Thomas", "Matthew", "Thadeus",  "Simon", "Judas" ];
+
 let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+let chaoticArray = ['Petrus', 10, true, NaN, undefined, 'true', 324.43];
 
 function makeRandomNumArray(amount, highestNumber){
     const arr = [];
@@ -90,3 +94,8 @@ function makeRandomNumArray(amount, highestNumber){
     return arr;
 }
 
+function makeRandomNumber(max, min){
+    min = Math.floor(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random()* (max-min + 1) + min); // max and min are inclusive
+}

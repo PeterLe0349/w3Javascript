@@ -2,7 +2,8 @@
 $(document).ready(function(){
     $('#stringBtn').click(function(e){
         e.preventDefault();
-        $('#stringArray').html(JSON.stringify(stringArray));
+        $('#stringArray').html(JSON.stringify(apostleArray) +
+        `<br>Chaotic Array: ${JSON.stringify(chaoticArray)}`);
 
     });
 
@@ -22,6 +23,12 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+
+console.log(stringArray.indexOf('Piotr'));
 
     // end jquery
 });
