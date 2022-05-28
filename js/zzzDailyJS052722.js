@@ -2,8 +2,7 @@
 $(document).ready(function(){
     document.getElementById('leftDisplay').innerHTML = leftDisplay();
     $('#rightDisplay').html(rightDisplay());
-    $('#mainDisplay').append(`<h1 class="text-center">Main Computation</h1>`);
-    $('#mainDisplay').append(midDisplay());
+    $('#mainDisplay').append(`<h1 class="text-center">Main Computation</h1>`).append(midDisplay());
 
 
     function leftDisplay(){
