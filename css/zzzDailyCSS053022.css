@@ -1,0 +1,13 @@
+:root {
+    --purple: purple;
+    counter-reset: countTracker;
+}
+
+body {
+    color: var(--purple);
+}
+
+h1::before {
+    /*counter-increment: countTracker;*/
+    /*content: 'Post #' counter(countTracker) ': ';*/
+}
