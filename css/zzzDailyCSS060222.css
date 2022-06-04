@@ -4,7 +4,11 @@
 }
 
 body{
-    color: var(--purple);
+    /*color: var(--purple);*/
+}
+
+p{
+    /*visibility:  */
 }
 
 li::before {

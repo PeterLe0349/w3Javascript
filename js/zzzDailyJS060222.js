@@ -1,8 +1,9 @@
 "use strict";
 $(document).ready(function(){
     document.getElementById('displayLeft').innerHTML = generateLeftDisplay();
-    $('#displayMain').html(generateMainDisplay());
-    $('#displayRight').html(generateRightDisplay());
+    $('#displayMain').append(generateMainDisplay());
+    $('#displayMain').append(generateMainDisplay());
+    $('#displayRight').append(generateRightDisplay());
 
 
     function generateLeftDisplay(){
