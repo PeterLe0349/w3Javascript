@@ -6,8 +6,19 @@ $(document).ready(function(){
     const myPromise = fetch(`https://sequoia-fuchsia-woolen.glitch.me/movies`);
     // myPromise.then( promise => promise.json().then( resolve => console.log(resolve)));
 
+    function generateMainDisplayInformation(n){
+        let html ='';
+        for(let i = 0; i < n; i++){
+            for(let j = 0; j < i; j++){
+                html += `${i}`;
+            }
+            html += `<br>`;
+        }
 
+        document.getElementById('displayMain').innerHTML += html;
+    }
 
+    generateMainDisplayInformation(10);
 
 
 
