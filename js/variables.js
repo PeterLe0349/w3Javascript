@@ -1,4 +1,7 @@
 "use strict";
+
+const GLITCH_MOVIE_URL = `https://sequoia-fuchsia-woolen.glitch.me/movies`;
+
 let blogObjects = [
     {
         "title": "My First Blog Post",
