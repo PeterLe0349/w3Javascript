@@ -1,6 +1,6 @@
 "use strict";
 $(document).ready(function(){
-    $('#displayMain').append(generatePost());
+    // $('#displayMain').append(generatePost());
 
 
     function generatePost(){
@@ -16,17 +16,20 @@ $(document).ready(function(){
     function displayAllData(movieDatabase){
         movieDatabase.then(data => {
             data.forEach(element =>   appendToMainDisplay(element));
+        }).then( () =>  {
+            var myCarousel = document.querySelector('#carouselExampleCaptions')
+            $('#carouselExampleCaptions').carousel({slide : true, ride : true });
         })
     }
 
     function appendToMainDisplay(movieObj){
          let html = '';
-         html+= `<div class="col-4 movieCard overflow-auto">`;
+         html+= `<div class="carousel-item movieCard overflow-auto">`;
          html+= `<h4>Title: ${movieObj.title}</h4>`;
          html+= `<p>Director: ${movieObj.director}</p>`;
          html+= `<p>Plot: ${movieObj.plot} ${movieObj.plot} ${movieObj.plot}</p>`;
          html+= `</div>`;
-         document.getElementById('displayMain').innerHTML += html;
+         document.getElementById('carol-inner').innerHTML += html;
     }
 
     function addMovieToDatabase(movieObj){
@@ -39,9 +42,9 @@ $(document).ready(function(){
         }
         return fetch(GLITCH_MOVIE_URL, options).then(res => res.json());
     }
-
-    let fakeMovie = {title:"Fake movie"};
-    addMovieToDatabase(fakeMovie);
+    //
+    // let fakeMovie = {title:"Fake movie"};
+    // addMovieToDatabase(fakeMovie);
 
     displayAllData(getEntireDatabase());
 

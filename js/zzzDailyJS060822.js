@@ -22,7 +22,7 @@ $(document).ready(function(){
         html += `<h5>Title: ${movieObj.title}</h5><br>`;
         html += `<strong>Director: ${movieObj.director} </strong><br>`;
         html += `<em>Plot: ${movieObj.plot}</em>`;
-        html += `</div>`; //close end div
+        html += `</div><hr>`; //close end div
         return html;
     }
 
