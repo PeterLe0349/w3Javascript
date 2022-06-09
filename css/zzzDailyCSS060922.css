@@ -1,0 +1,19 @@
+:root {
+    --purple: purple;
+    counter-reset: countTracker;
+}
+
+body{
+    color: var(--purple);
+}
+
+p::before{
+    /*counter-increment: countTracker;*/
+    /*content: "Post #" counter(countTracker) " ";*/
+}
+
+.movieCard{
+    height: 40vh;
+    width: 20vw;
+    border: 3px solid darkred;
+}

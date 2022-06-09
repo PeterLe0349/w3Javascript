@@ -19,10 +19,10 @@ $(document).ready(function(){
     function generateMovieData(movieObj){
         let html = '';
         html += `<div>`;
-        html += `<h5>Title: ${movieObj.title}</h5>`;
+        html += `<h5>Title: ${movieObj.title}</h5><br>`;
         html += `<strong>Director: ${movieObj.director} </strong><br>`;
         html += `<em>Plot: ${movieObj.plot}</em>`;
-        html += `</div><hr>`; //close end div
+        html += `</div>`; //close end div
         return html;
     }
 
