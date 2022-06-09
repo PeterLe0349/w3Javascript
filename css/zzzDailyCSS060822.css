@@ -11,3 +11,8 @@ p::before{
     counter-increment: countTracker;
     content: 'Post #' counter(countTracker) ' ';
 }
+
+img {
+    height: 30vh;
+    background-color: gray;
+}
