@@ -1,4 +1,4 @@
-:root{
+:root {
     --purple: purple;
     counter-reset: countTracker;
 }
@@ -7,7 +7,7 @@ body{
     color: var(--purple);
 }
 
-p::before{
+p::before {
     counter-increment: countTracker;
     content: "Post #" counter(countTracker);
 }
