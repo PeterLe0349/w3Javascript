@@ -1,0 +1,14 @@
+:root {
+    --purple: purple;
+    --red: red;
+    counter-reset: counterTracker;
+}
+
+body{
+    color: var(--red);
+}
+
+p::before {
+    counter-increment: counterTracker;
+    content: "Post #" counter(counterTracker) " ";
+}
