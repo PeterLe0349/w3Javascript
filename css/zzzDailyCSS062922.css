@@ -1,0 +1,13 @@
+:root {
+    --red: red;
+    counter-reset: ct;
+}
+
+body{
+    color: var(--red);
+}
+
+p::before {
+    counter-increment: ct;
+    content: "Post #" counter(ct) " ";
+}
