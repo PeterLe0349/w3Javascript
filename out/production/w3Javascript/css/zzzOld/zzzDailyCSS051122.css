@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --red: red;
+    --green: green;
+    --purple: purple;
+}
+
+body {
+    font-size: 1em;
+    color: var(--purple);
+}
+
+.back-red{
+
+    opacity: .5;
+    background: var(--red);
+
+}
+
+.img-test {
+    width: 100%;
+    height: 300px;
+    border: 5px solid #575357;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1400px) {
+
+}

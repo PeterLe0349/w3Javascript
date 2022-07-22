@@ -1,0 +1,35 @@
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    background-color: #46205C;
+}
+
+nav {
+    border: 1px solid rebeccapurple;
+    text-align: right;
+}
+
+footer{
+    border: 1px solid mediumpurple;
+}
+
+aside {
+    border: 1px solid darkgreen;
+}
+
+body{
+    background-color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}

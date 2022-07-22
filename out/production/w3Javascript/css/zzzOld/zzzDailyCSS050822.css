@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+
+}
+
+:root {
+    --red: red;
+    --green: green;
+    --purple: rgba(128, 0, 128, 0.16);
+    --bg-color: pink;
+    --text-color: black;
+
+}
+
+body {
+    color: var(--text-color);
+    /*background-color: var(--bg-color);*/
+    counter-reset: count;
+}
+
+div::before {
+    /*counter-increment: count;*/
+    /*content: counter(count);*/
+}
+
+div {
+    background-color: rgba(211, 211, 211, 0.18);
+}
+
+.clear-all {
+    margin: 0;
+    padding: 0;
+}
+
+.back-color {
+    background-color: var(--purple);
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+/*div:nth-child(3n+1){*/
+/*    background-color: var(--red);*/
+/*}*/
+
+/*div:nth-child(3n+2){*/
+/*    background-color: var(--green);*/
+/*}*/
+
+/*div:nth-child(3n){*/
+/*    background-color: var(--purple);*/
+/*}*/

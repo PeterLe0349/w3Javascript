@@ -1,0 +1,13 @@
+:root {
+    --purple: purple;
+    counter-reset: countCounter;
+}
+
+body{
+    color: var(--purple);
+}
+
+h1::before{
+    counter-increment: countCounter;
+    content: "Hello #" counter(countCounter);
+}

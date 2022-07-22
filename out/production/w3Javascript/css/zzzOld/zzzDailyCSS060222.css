@@ -1,0 +1,17 @@
+:root{
+    --purple: purple;
+    counter-reset: countTracker;
+}
+
+body{
+    /*color: var(--purple);*/
+}
+
+p{
+    /*visibility:  */
+}
+
+li::before {
+    counter-increment: countTracker;
+    content: 'Post #'counter(countTracker);
+}

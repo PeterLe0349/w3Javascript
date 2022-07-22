@@ -1,0 +1,15 @@
+:root {
+    --purple: purple;
+    --black: rgba(0, 0, 0, 0.96);
+    counter-reset: countTracker;
+}
+
+body {
+    color: var(--black);
+}
+
+p::before {
+    counter-increment: countTracker;
+    content: 'Post #' counter(countTracker)' ';
+}
+

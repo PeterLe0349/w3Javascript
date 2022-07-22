@@ -1,0 +1,9 @@
+:root{
+    --purple: purple;
+    counter-reset: countCounter;
+}
+
+body{
+    color: black;
+    font-weight: bold;
+}

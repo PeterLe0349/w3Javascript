@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+
+}
+
+:root {
+    --red: rgba(206, 159, 159, 0.58);
+    --green: rgba(181, 236, 181, 0.18);
+    --black: #8d8484;
+    --purple: rgba(128, 0, 128, 0.39);
+    --text-color: #3a0000;
+}
+
+body {
+    color: var(--text-color);
+    counter-reset: div-color;
+}
+
+div::before {
+    counter-increment: div-color;
+    content:counter(div-color);
+}
+
+div:nth-child(4n){
+    background-color: var(--red);
+}
+
+div:nth-child(4n+1){
+    background-color: var(--green);
+}
+
+div:nth-child(4n+2){
+    background-color: var(--purple);
+}
+
+div:nth-child(4n+3){
+    background-color: var(--black);
+}

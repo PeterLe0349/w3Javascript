@@ -1,0 +1,21 @@
+:root{
+    --purple: purple;
+    counter-reset: countTracker;
+}
+
+body{
+    color: var(--purple);
+}
+
+p::before {
+    counter-increment: countTracker;
+    content: "Post #" counter(countTracker);
+}
+
+ul{
+    list-style: none;
+}
+
+.deleteClass{
+
+}

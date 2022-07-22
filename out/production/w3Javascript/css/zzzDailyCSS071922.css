@@ -1,0 +1,13 @@
+:root {
+    --green: forestgreen;
+    counter-reset: ct;
+}
+
+body {
+    color: var(--green);
+}
+
+p::before {
+    counter-increment: ct;
+    content: "Post #" counter(ct) " ";
+}

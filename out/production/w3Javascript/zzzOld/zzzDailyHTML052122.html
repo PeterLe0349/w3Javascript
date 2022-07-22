@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JQuery CDN 3.6 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--   personal custom CSS-->
+    <link rel="stylesheet" href="css/zzzDailyCSS052122.css">
+</head>
+
+<body>
+<!--main container-->
+<div class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+        <div class="carousel-indicators" >
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active caroHeight" >
+                <img src="img/robot.jpeg" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item caroHeight"  >
+                <img src="img/miniBlackRobot.jpeg" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item caroHeight" >
+                <img src="img/ipad.jpg" class="d-block w-100 " alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+<!--    main row-->
+    <div class="row">
+<!--        navbar-->
+        <nav class="navbar navbar-dark  navbar-expand-lg bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
+                        <li class="nav-item ">
+                            <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Places
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Beijing</a></li>
+                                <li><a class="dropdown-item" href="#">Shanghai</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Seoul</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class='d-flex' role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+<!--            end main nav-->
+<!--left column-->
+<div class="col-3">
+    <form action="">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" id="username" name="username" class="form-control">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" name="password" class="form-control">
+        <button class="btn btn-dark mt-2" type="submit" id="logSubBtn">login</button>
+    </form>
+</div>
+<!--        mid column -->
+        <div class="col-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi consequuntur exercitationem itaque magnam natus quos repellat totam voluptas voluptatum? Cumque ipsam iure libero quo vitae. Consequatur, eligendi, quis. Nisi?
+        </div>
+<!--        right column-->
+        <div class="col-3">
+            Side Menu
+        </div>
+
+
+
+<!--        end main row-->
+    </div>
+<!--    end main container-->
+</div>
+
+
+
+
+
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--Personal custom JS script-->
+<script src="js/zzzDailyJS052122.js"></script>
+</body>
+</html>

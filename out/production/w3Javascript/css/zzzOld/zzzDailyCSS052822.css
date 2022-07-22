@@ -1,0 +1,27 @@
+:root{
+    --purple: purple;
+    counter-reset: countTracker1;
+}
+
+body{
+    /*color: var(--purple);*/
+
+}
+
+h1::before{
+    /*counter-increment: countTracker1;*/
+    /*content: '#' counter(countTracker1) ': ';*/
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 50vw auto;
+    min-height: 50vh;
+}
+
+.grid-item {
+    border: 3px solid darkred;
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+}

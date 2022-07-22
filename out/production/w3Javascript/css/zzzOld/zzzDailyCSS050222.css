@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    text-align: center;
+}
+
+nav{
+    border-bottom: 3px solid darkslategray;
+}
+nav>ul>li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 3px;
+}
+
+li:hover {
+    color: lightgreen;
+}
+
+.box {
+    float: left;
+    min-height: 900px;
+}
+
+.left {
+    width: 25%;
+    background-color: lightyellow;
+}
+
+.mid {
+    width: 50%;
+    background-color: lightgray;
+}
+
+.right {
+    width: 25%;
+    background-color: lightblue;
+}
+
+main {
+    overflow: auto;
+}

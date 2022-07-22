@@ -1,0 +1,23 @@
+:root {
+    --purple: black;
+    counter-reset: countTracker;
+}
+
+body {
+    color: var(--purple);
+}
+
+body::before {
+    /*counter-increment: countTracker;*/
+    /*content: "Hello 25." counter(countTracker) ;*/
+}
+
+p::before {
+    counter-increment: countTracker;
+    content: 'Post #' counter(countTracker) ' ';
+}
+
+.para {
+
+}
+

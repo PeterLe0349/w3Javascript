@@ -1,0 +1,19 @@
+:root {
+    --purple: purple;
+    counter-reset: countTracker;
+}
+
+body {
+    color: var(--purple);
+}
+
+h1::before {
+    counter-increment: countTracker;
+    content: '#' counter(countTracker) '  ';
+}
+
+.caroHeight {
+    height: 250px; !important;
+    width: 100%;
+    object-fit: cover;
+}
