@@ -8,12 +8,12 @@ $(document).ready( () => {
     <div>
     <h1>title: ${movie.title}</h1>
     <p>${movie.plot}</p>
-</div>`
+</div>`;
 
-        })
+        });
 
 
-    })
+    });
 
 
     // end jquery
