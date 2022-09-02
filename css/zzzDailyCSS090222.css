@@ -1,0 +1,13 @@
+:root {
+    counter-reset: ct;
+    --purple: purple;
+}
+
+body{
+    color: var(--purple);
+}
+
+p::before{
+    counter-increment: ct;
+    content: "Captains log #" counter(ct) " ";
+}
